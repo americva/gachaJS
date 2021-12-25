@@ -50,14 +50,18 @@
     flex-direction: column;
 }
 #foto {
-    width: 30px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 10px;
     height: auto;
-    z-index: 12;
+    z-index: 22;
     animation: fadeIn 1s linear forwards;
     animation-delay: 1s;
     opacity: 0;
 }
 #nombre {
+    width: auto;
     display: flex;
     align-items: flex-start;
     margin-top: 60px;
@@ -154,6 +158,35 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    .human img {
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    .dog img {
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    .sparks {
+        width: 70px;
+        height: 70px;
+    }
+    .flex-item {
+        margin-right: 20px;
+    }
+    
+    #foto {
+        width: 5px;
+        height: auto;
+    }
+    #nombre {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 400px) {
 
     .human img {
@@ -174,9 +207,8 @@
         margin-right: 20px;
     }
     
-
     #foto {
-        width: 20px;
+        width: 5px;
         height: auto;
     }
     #nombre {
